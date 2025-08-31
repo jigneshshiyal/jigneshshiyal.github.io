@@ -18,7 +18,7 @@ title: "Jignesh Shiyal | Data Scientist"
       <p>"Turning data into decisions"</p>
       <div class="cta-buttons">
         <a href="#projects" class="btn">View Projects</a>
-        <a href="/assets/cv/jignesh_shiyal_cv.pdf" class="btn secondary" target="_blank">Download CV</a>
+        <a href="/assets/cv/JigneshShiyal_Resume.pdf" class="btn secondary" target="_blank">Download CV</a>
       </div>
     </div>
   </section>
