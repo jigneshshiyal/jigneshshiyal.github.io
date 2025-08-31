@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: "Jignesh Shiyal | Data Scientist" }}</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <a href="/" class="logo">Jignesh Shiyal</a>
+            <nav>
+                <a href="/#about" class="nav-item">About</a>
+                <a href="/#skills" class="nav-item">Skills</a>
+                <a href="/#projects" class="nav-item">Projects</a>
+                <a href="/#experience" class="nav-item">Experience</a>
+                <a href="/blog.html" class="nav-item">Blog</a>
+                <a href="/#contact" class="nav-item">Contact</a>
+                <a href="https://www.linkedin.com/in/jigneshshiyal" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/jigneshshiyal" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        {{ content }}
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; {% assign current_year = 'now' | date: '%Y' %}{{ current_year }} Jignesh Shiyal | Built with ❤️ and Jekyll</p>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/jigneshshiyal" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/jigneshshiyal" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

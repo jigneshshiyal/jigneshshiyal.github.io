@@ -1,0 +1,15 @@
+- title: "Fast Tune Whisper"
+  description: "A speech-to-text system fine-tuned on Whisper, optimized for speed and deployed with CTranslate2 for production environments."
+  tags: ["Python", "Speech-to-Text", "Whisper", "CTranslate2"]
+  github: "https://github.com/jigneshshiyal/FastTuneWhisper"
+  # demo: "link-to-demo" # Optional demo link
+
+- title: "VideoFusion Search"
+  description: "A multimodal YouTube video search engine allowing queries via text or images, powered by OpenAI's CLIP model."
+  tags: ["Python", "Multimodal", "CLIP", "Vector Search"]
+  github: "https://github.com/jigneshshiyal/VideoFusionSearch"
+
+- title: "FaceKYC"
+  description: "A browser-based KYC verification system with selfie guidance, liveness detection, and face matching for secure onboarding."
+  tags: ["Computer Vision", "JavaScript", "Python", "KYC"]
+  github: "https://github.com/jigneshshiyal/facekyc"

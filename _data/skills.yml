@@ -1,0 +1,20 @@
+- name: Python
+  icon: "fab fa-python"
+- name: SQL
+  icon: "fas fa-database"
+- name: TensorFlow
+  icon: "fas fa-robot"
+- name: PyTorch
+  icon: "fas fa-brain"
+- name: AWS
+  icon: "fab fa-aws"
+- name: GCP
+  icon: "fab fa-google"
+- name: Docker
+  icon: "fab fa-docker"
+- name: Kubernetes
+  icon: "fas fa-dharmachakra" # A common icon for Kubernetes
+- name: Tableau
+  icon: "fas fa-chart-line"
+- name: Power BI
+  icon: "fas fa-chart-bar"

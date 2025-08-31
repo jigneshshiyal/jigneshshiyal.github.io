@@ -1,0 +1,13 @@
+- company: "Credit+"
+  role: "Data Scientist"
+  period: "2024-Present"
+  points:
+    - "Engineered an AI-powered document intelligence pipeline, enabling 4x faster transaction classification and cutting operational costs by 35%."
+    - "Implemented a computer vision-based face verification system that reduced KYC processing time by 40%."
+
+- company: "Cybercom Creation"
+  role: "Software Developer"
+  period: "2023-2024"
+  points:
+    - "Developed time-series demand forecasting models that improved inventory planning accuracy by 30%."
+    - "Implemented image similarity and product-matching models that reduced manual catalog mapping effort by 50%."
