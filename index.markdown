@@ -110,20 +110,4 @@ title: "Jignesh Shiyal | Data Scientist"
     <a href="/blog.html" class="btn secondary">See all posts</a>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form class="contact-form" action="https://formspree.io/f/yourformid" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="_replyto" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send</button>
-    </form>
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/jigneshshiyal" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/jigneshshiyal" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.kaggle.com/jigneshshiyal" target="_blank"><i class="fab fa-kaggle"></i></a>
-    </div>
-  </section>
-
 </div>
