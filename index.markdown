@@ -15,7 +15,7 @@ title: "Jignesh Shiyal | Data Scientist"
     <div class="hero-right">
       <h1>Hi, I'm <span class="highlight">Jignesh Shiyal</span></h1>
       <h2>Data Scientist | AI Builder</h2>
-      <p>"Turning data into decisions"</p>
+      <!-- <p>"Transforming Data into Scalable AI Products that Drive Real Business Impact"</p> -->
       <div class="cta-buttons">
         <a href="#projects" class="btn">View Projects</a>
         <a href="/assets/cv/JigneshShiyal_Resume.pdf" class="btn secondary" target="_blank">Download CV</a>
@@ -32,12 +32,10 @@ title: "Jignesh Shiyal | Data Scientist"
       </div>
       <div class="about-text">
         <p>
-          I’m a Data Scientist with expertise in NLP, Computer Vision, and Document Intelligence. 
-          My work spans across the lending industry, conversational AI, and predictive analytics. 
+          I’m a Data Scientist & AI Engineer with 3+ years of experience in NLP, vision, speech, and document intelligence. I enjoy building AI systems that are not only accurate but also fast, scalable, and cost-effective.
         </p>
         <p>
-          Previously, I built credit scoring models for loan lending, automated KYC onboarding with 
-          face recognition, and deployed multilingual chatbots to serve thousands of users daily.
+          At Creditt+, I created solutions that cut KYC time by 40%, boosted compliance accuracy by 20%, and eliminated reliance on third-party APIs. Earlier, at Cybercom Creation, I worked on demand forecasting, product image classification, and catalog automation—improving efficiency by up to 50%.
         </p>
       </div>
     </div>

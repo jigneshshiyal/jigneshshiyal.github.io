@@ -1,15 +1,24 @@
-- title: "Fast Tune Whisper"
-  description: "A speech-to-text system fine-tuned on Whisper, optimized for speed and deployed with CTranslate2 for production environments."
+- title: "FastTuneWhisper"
+  description: "FastTuneWhisper is a production-ready multimodal search system that enables fast text and image-based search over YouTube videos. It leverages fine-tuned Whisper, CLIP embeddings, and ChromaDB to build a searchable video content index."
   tags: ["Python", "Speech-to-Text", "Whisper", "CTranslate2"]
   github: "https://github.com/jigneshshiyal/FastTuneWhisper"
-  # demo: "link-to-demo" # Optional demo link
 
 - title: "VideoFusion Search"
-  description: "A multimodal YouTube video search engine allowing queries via text or images, powered by OpenAI's CLIP model."
+  description: "VideoFusionSearch is a production-ready multimodal search system that enables fast text and image-based search over YouTube videos. It leverages fine-tuned Whisper, CLIP embeddings, and ChromaDB to build a searchable video content index."
   tags: ["Python", "Multimodal", "CLIP", "Vector Search"]
   github: "https://github.com/jigneshshiyal/VideoFusionSearch"
 
 - title: "FaceKYC"
-  description: "A browser-based KYC verification system with selfie guidance, liveness detection, and face matching for secure onboarding."
+  description: "Browser-based Face KYC (Know Your Customer) verification system using JavaScript for frontend capture and Deep Learning models for identity verification"
   tags: ["Computer Vision", "JavaScript", "Python", "KYC"]
   github: "https://github.com/jigneshshiyal/facekyc"
+
+- title: "SmartResumeAgent"
+  description: "An AI-powered multi-agent system that generates and ranks resume variants tailored to specific job posts using LLMs, keyword extraction, and ATS optimization"
+  tags: ["Python", "LLM", "Resume Builder", "Multi-Agent", "Gemini", "LangChain"]
+  github: "https://github.com/jigneshshiyal/SmartResumeAgent"
+
+- title: "whatsapp-group-contact-extractor-extension"
+  description: "A JavaScript browser extension to extract group contact information from WhatsApp Web by accessing the internal IndexedDB storage."
+  tags: ["JavaScript", "Chrome Extension", "WhatsApp"]
+  github: "https://github.com/jigneshshiyal/whatsapp-group-contact-extractor-extension"

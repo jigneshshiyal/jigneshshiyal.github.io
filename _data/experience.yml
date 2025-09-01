@@ -1,13 +1,16 @@
-- company: "Credit+"
+- company: "Creditt+"
   role: "Data Scientist"
   period: "2024-Present"
   points:
-    - "Engineered an AI-powered document intelligence pipeline, enabling 4x faster transaction classification and cutting operational costs by 35%."
-    - "Implemented a computer vision-based face verification system that reduced KYC processing time by 40%."
+    - "Built an AI-powered pipeline for bank statement analysis using Table Transformer + DistilBERT. The system classified 4x faster, reduced costs by 35%, and removed dependency on external APIs."
+    - "Automated KYC face matching with CNN + Mediapipe, cutting onboarding time by 40% and improving accuracy by 25%."
+    - "Delivered a video-audio compliance model with Whisper + CTranslate2 that ran at half the latency, with 20% higher accuracy and no external provider reliance."
 
 - company: "Cybercom Creation"
   role: "Software Developer"
   period: "2023-2024"
   points:
-    - "Developed time-series demand forecasting models that improved inventory planning accuracy by 30%."
-    - "Implemented image similarity and product-matching models that reduced manual catalog mapping effort by 50%."
+    - "Improved inventory accuracy by 30% through time-series demand forecasting models.Deployed YOLOv8 object detection to classify product images and improve catalog efficiency."
+    - "Reduced catalog mapping effort by 50% with image similarity and product-matching models (MobileNet, InceptionNet)."
+    - "Developed an event management system with Django + JavaScript to handle scheduling and registrations."
+    - "Integrated Razorpay payments for real-time, secure transactions."
