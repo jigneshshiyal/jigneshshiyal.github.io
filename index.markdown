@@ -49,9 +49,6 @@ title: "Jignesh Shiyal | Data Scientist"
     <!-- GitHub Stats -->
     <img src="https://github-readme-stats.vercel.app/api?username=jigneshshiyal&show_icons=true&theme=radical" alt="GitHub Stats" />
 
-    <!-- Contribution Streak -->
-    <img src="https://streak-stats.demolab.com?user=jigneshshiyal&theme=radical" alt="GitHub Streak" />
-
     <!-- Contribution Graph -->
     <img src="https://github-readme-activity-graph.vercel.app/graph?username=jigneshshiyal&theme=radical" alt="Contribution Graph" />
   </div>
