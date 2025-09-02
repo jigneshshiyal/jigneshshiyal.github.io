@@ -41,6 +41,22 @@ title: "Jignesh Shiyal | Data Scientist"
     </div>
   </section>
 
+  <section id="github">
+  <h2>GitHub Contributions</h2>
+  <p>Here’s my activity on GitHub:</p>
+
+  <div class="github-stats">
+    <!-- GitHub Stats -->
+    <img src="https://github-readme-stats.vercel.app/api?username=jigneshshiyal&show_icons=true&theme=radical" alt="GitHub Stats" />
+
+    <!-- Contribution Streak -->
+    <img src="https://streak-stats.demolab.com?user=jigneshshiyal&theme=radical" alt="GitHub Streak" />
+
+    <!-- Contribution Graph -->
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=jigneshshiyal&theme=radical" alt="Contribution Graph" />
+  </div>
+</section>
+
   <!-- Skills Section -->
   <section id="skills">
     <h2>Skills & Tech Stack</h2>
