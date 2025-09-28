@@ -8,13 +8,13 @@ title: "Jignesh Shiyal | Data Scientist"
   <!-- Hero Section -->
   <section id="hero" class="hero">
     <div class="hero-left">
-        <img src="https://media.licdn.com/dms/image/v2/D4D03AQEZDawGhxxJEw/profile-displayphoto-scale_400_400/B4DZjx4dZ7H4Ag-/0/1756404767044?e=1759363200&v=beta&t=SCc4Wuq3_CcgnZ1RqqFT3Ep-WPiIKzVnPKVeQJ_4sG0" 
+        <img src="/assets/cv/profile_img.png" 
        alt="Profile Photo" 
        class="hero-photo">
     </div>
     <div class="hero-right">
       <h1>Hi, I'm <span class="highlight">Jignesh Shiyal</span></h1>
-      <h2>Data Scientist | AI Builder</h2>
+      <h2>Data Scientist | AI Engineer</h2>
       <!-- <p>"Transforming Data into Scalable AI Products that Drive Real Business Impact"</p> -->
       <div class="cta-buttons">
         <a href="#projects" class="btn">View Projects</a>
@@ -28,7 +28,7 @@ title: "Jignesh Shiyal | Data Scientist"
     <h2>About Me</h2>
     <div class="about-grid">
       <div class="about-image">
-        <img src="https://media.licdn.com/dms/image/v2/D4D03AQEZDawGhxxJEw/profile-displayphoto-scale_400_400/B4DZjx4dZ7H4Ag-/0/1756404767044?e=1759363200&v=beta&t=SCc4Wuq3_CcgnZ1RqqFT3Ep-WPiIKzVnPKVeQJ_4sG0" alt="About Jignesh">
+        <img src="/assets/cv/profile_img.png" alt="About Jignesh">
       </div>
       <div class="about-text">
         <p>
