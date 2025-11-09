@@ -124,6 +124,20 @@ a:hover {
     font-size: 1.2rem;
 }
 
+/* Mobile nav toggle (checkbox hack) */
+.nav-toggle-input {
+  display: none;
+}
+.nav-toggle {
+  display: none; /* shown only on small screens */
+  cursor: pointer;
+  color: var(--heading-color);
+  font-size: 1.4rem;
+  background: transparent;
+  border: none;
+  padding: 0.2rem 0.4rem;
+}
+
 /* ============================================ */
 /* Hero Section               */
 /* ============================================ */
@@ -416,10 +430,64 @@ header {
         font-size: 2rem;
     }
     
-    .navbar .container {
-        flex-direction: column;
-        gap: 1rem;
-    }
+  /* Keep logo and toggle on one row and align them */
+  .navbar .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative; /* anchor for absolute nav */
+    width: 100%;
+  }
+  /* show hamburger and collapse nav on mobile */
+  .nav-toggle {
+    display: block;
+    font-size: 1.25rem;
+    background: transparent;
+    border: none;
+    color: var(--heading-color);
+    margin-left: auto; /* push toggle to the far right */
+  }
+
+  /* Dropdown nav: positioned under header so it doesn't break header layout */
+  .navbar nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    transition: max-height 0.28s ease;
+    background: rgba(17, 24, 39, 0.98);
+    padding: 0 0.5rem;
+    z-index: 999;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  .nav-toggle-input:checked ~ nav {
+    max-height: 999px; /* allow menu to expand */
+    padding: 0.5rem 0.5rem 0.8rem;
+  }
+
+  .navbar .nav-item {
+    padding: 0.8rem 0.5rem;
+    display: block;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+  }
+
+  .navbar .social-icon {
+    padding: 0.6rem 0.5rem;
+    text-align: left;
+  }
     
     .hero-content {
         grid-template-columns: 1fr;
@@ -438,6 +506,65 @@ header {
     .hero-text .title {
         font-size: 3rem;
     }
+
+  /* ensure hero text is centered on mobile (explicit) */
+  .hero-text {
+    text-align: center;
+  }
+
+  /* Force hero layout to be strictly vertical: image -> title/tagline -> buttons */
+  .hero-section,
+  .hero-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 1rem;
+  }
+
+  .hero-image {
+    order: 1 !important;
+    margin-bottom: 0.6rem;
+  }
+
+  .hero-text {
+    order: 2 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  /* Buttons container: stack vertically on mobile */
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    width: 100%;
+    max-width: 360px;
+    align-items: center;
+    margin-top: 0.6rem;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 360px;
+    padding: 0.75rem 1rem;
+  }
+
+  /* Ensure single/multiple buttons inside hero-text stack and are full-width on mobile */
+  .hero-text .btn {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    margin-top: 0.4rem;
+    text-align: center;
+  }
+
+  /* If there are multiple .btn anchors directly inside .hero-text, stack them */
+  .hero-text .btn + .btn {
+    margin-top: 0.6rem;
+  }
 
     .about-container {
         grid-template-columns: 1fr;
@@ -834,3 +961,141 @@ html, body {
 .github-stats img:hover {
   transform: scale(1.02);
 }
+
+
+/* ============================================ */
+/* HERO - REWRITTEN (consolidated, overrides earlier rules) */
+/* ============================================ */
+
+/* Container */
+.hero-section {
+  padding-top: 80px; /* leave space for fixed navbar */
+  min-height: calc(100vh - 80px);
+  display: flex !important;
+  align-items: center;
+  background: transparent;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  display: grid !important;
+  grid-template-columns: 1fr 380px;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+/* Text column */
+.hero-text {
+  text-align: left !important;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.hero-text .greeting {
+  font-family: var(--font-mono);
+  color: var(--primary-color);
+  font-size: 0.95rem;
+}
+.hero-text .title {
+  font-size: 2.8rem;
+  line-height: 1.05;
+  color: var(--heading-color);
+  margin: 0;
+}
+.hero-text .tagline {
+  color: var(--text-color);
+  font-size: 1.05rem;
+  max-width: 680px;
+}
+
+/* Buttons grouping */
+.hero-buttons {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+.hero-buttons .btn {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.95rem;
+}
+
+/* Image column */
+.hero-image {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.hero-image .profile-photo {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid var(--primary-color);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
+/* Responsive: Mobile first adjustments */
+@media (max-width: 767px) {
+  .hero-section {
+    padding-top: 72px;
+    min-height: auto;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  /* ensure image appears first on mobile */
+  .hero-image {
+    order: 1 !important;
+    margin-bottom: 0.25rem;
+  }
+
+  .hero-text {
+    order: 2 !important;
+    text-align: center !important;
+    align-items: center;
+  }
+
+  .hero-image .profile-photo {
+    width: 180px;
+    height: 180px;
+    border-width: 4px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.28);
+  }
+
+  /* stack buttons vertically on small screens */
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    max-width: 360px;
+    align-items: center;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  /* fallback: if buttons are direct children of .hero-text */
+  .hero-text > .btn {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    margin: 0.5rem 0 0;
+  }
+}
+
+/* Larger screens tuning */
+@media (min-width: 1024px) {
+  .hero-text .title { font-size: 3.6rem; }
+  .hero-content { grid-template-columns: 1fr 420px; }
+  .hero-image .profile-photo { width: 360px; height: 360px; }
+}
+
+/* End HERO - REWRITTEN */
+
